@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../font/icomoon.eot?mafe58');
+  src:  url('../font/icomoon.eot?mafe58#iefix') format('embedded-opentype'),
+    url('../font/icomoon.ttf?mafe58') format('truetype'),
+    url('../font/icomoon.woff?mafe58') format('woff'),
+    url('../font/icomoon.svg?mafe58#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e902";
+}
+.icon-spades:before {
+  content: "\e917";
+}
+.icon-shopping-bag:before {
+  content: "\e900";
+}
+
+
+html, 
+body{
+    background: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+    color: black;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a, button{
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+
+button:hover,
+.btn:hover,
+button:focus,
+.btn:focus{
+  background: #fff;
+  color:#3c3c3c;
+}
+
+button:active,
+.btn:active{
+  background: #a09d9d;
+}
+
+/* Grid */
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+.row{
+    /*margin: 0 -15px;*/
+}
+
+.row:before,
+.row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+[class^="col"],
+[class*="col"]{
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.col-1{
+    width: 8.3333%;
+}
+
+.col-2{
+    width: 16.6666%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.3333%;
+}
+
+.col-5{
+    width: 41.6665%;
+}
+
+.col-6{
+    width: 50%;
+    padding: 0;
+}
+
+.col-7{
+    width: 58.3333%;
+}
+
+.col-8{
+    width: 66.6666%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.3333%;
+}
+
+.col-11{
+    width: 91.6666%
+}
+
+.col-12{
+    width: 100%;
+}
+
+.col-offset-1{
+    margin-left: 8.3333%;
+}
+
+.col-offset-2{
+    margin-left: 16.6666%;
+}
+
+.col-offset-3{
+    margin-left: 25%;
+}
+
+.col-offset-4{
+    margin-left: 33.3333%;
+}
+
+.col-offset-5{
+    margin-left: 41.6665%;
+}
+
+.col-offset-6{
+    margin-left: 50%;
+}
+
+.col-offset-7{
+    margin-left: 58.3333%;
+}
+
+.col-offset-8{
+    margin-left: 66.6666%;
+}
+
+.col-offset-9{
+    margin-left: 75%;
+}
+
+.col-offset-10{
+    margin-left: 83.3333%;
+}
+
+.col-offset-11{
+    margin-left: 91.6666%
+}
+
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+
+.menu{
+   padding-top: 80px;
+   margin: 0 auto;
+   width: 600px;
+}
+
+ul{
+  position: relative;
+  cursor: pointer;
+  list-style-type: none;
+  padding: 0;
+  font-size: 0;
+  background: #2b3040;
+
+}
+
+li{
+  display: inline-block;
+  width: 28%;
+  border-bottom: 2px solid #2b3040;
+  background: #2b3040;
+  padding: 30px 5px;
+  font-size: 16px;
+  color: #8d91a3;
+  text-transform: uppercase;
+}
+
+li.active:before{
+  position: absolute;
+  content: "";
+  width: 22%;
+  top: 100%;
+  transform: translate(-50%);
+  border: 1px solid white;
+  /*color: white;*/
+}
+
+li.active{
+   color: white;
+}
+
+span{
+  display: block;
+  margin-bottom: 5px;
+}
+.col-8{
+  padding: 0;
+}
+
+.col-2{
+  margin-right: 15px;
+  padding-left: 0;
+}
+
+.col-7{
+  padding-left: 0;
+}
+
+.tabs{
+    background: url(../img/BG.jpeg) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+.show-card{
+  width: 600px;
+  background: url(../img/backgr2.png) no-repeat center center;
+  margin: 0 auto;
+}
+
+.st-left{
+  display: block;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.fc-img-txt{
+  padding-top: 57px;
+}
+
+button{
+  padding: 15px 35px;
+  margin-bottom: 53px;
+  background: #13e28d;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+p,
+h2{
+  text-align: left;
+  margin: 0;
+}
+
+p{
+  width: 100%;
+}
+
+.game-info{
+  padding-top: 30px;
+  width: 98%;
+}
+
+.game-name{
+  font-size: 32px;
+}
+
+.bottom-st{
+  vertical-align: top;
+}
+
+.st-top-padding{
+  padding-top: 20px;
+}
+
+.price{
+  font-size: 32px;
+  line-height: 0.8;
+  padding-top: 5px;
+}
+
+.sale{
+  font-size: 12px;
+  color: #fedc3f;
+}
+
+.img-mid{
+  margin: 0 auto;
+}
